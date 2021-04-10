@@ -143,6 +143,11 @@ export default {
   methods: {
     // following method is REQUIRED
     // (don't change its name --> "show")
+    // If using tyscript syntax replace by to fix this error:
+    // Property 'hide' does not exist on type 'Vue | Element | Vue[] | Element[]'.
+    // Property 'hide' does not exist on type 'Vue'.Vetur(2339)
+    //  Change to :
+    // (this.$refs.dialog as any).show()
     show () {
       this.$refs.dialog.show()
     },
